@@ -1,0 +1,16 @@
+mutable = change ho skatha  hy
+immutable = change nhi ho sakhta 
+
+
+
+x = 10
+y = x
+
+x out put 10
+y out 10
+
+x change in
+x = 15
+x output 15
+y output  10
+
