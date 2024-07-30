@@ -23,3 +23,49 @@ Initially, both x and y have the value 10.
 When x is changed to 15, y remains 10 because it was assigned the value of x before x was changed.
 
 This demonstrates how x is mutable (it can be changed), and how assigning x to y creates a separate copy of the value.
+
+
+** Internally work in python **
+
+
+import sys
+sys.getrefcount(24601)  //3
+sys.getrefcount("BIlal)  //4294967295
+sys.getrefcount('l')  //4294967295
+
+
+python ka koi data type nhi hota hy aur na hi assign krthy hy
+
+memroy ky under data type hota hy
+
+a = 10 jo hy memory hota hy aur 'a' data type nhi hota hy interview ka qquestion
+
+number aur string q ky bohot zada hoty islye immediately collect nhi krta 
+
+jo type hota hy wo hammesha object ma hota kabi nhi name ma nhi hota hy 
+
+
+
+l1 = 
+l2 = l1
+l1 ouput  [1,2,3,4,5] 
+l2 ouput  [1,2,3,4,5] 
+l1[0] = 66
+l1 output [66,2,3,4,5] 
+l2 output [66,2,3,4,5]
+
+l1 = [1,2,3,4]  new refrence dea hy ikso
+l1[0] = 244
+l1 out [244,2,3,4]
+l2 out [66,2,3,4,5]
+
+
+slicing dea hy us ka copy banaya hy
+h1 = [1,2,3]
+h2 = h1[:]
+h1 output [1,2,3]
+h2 output [1,2,3]
+
+
+floor to bottom ki taraf sy 
+trunc to toward move ki taraf sy
